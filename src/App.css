@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+#container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#todo-heading{
+    color: black;
+    font-weight: 900;
+    margin-left: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-input{
+    height: 24px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.filter-todo{
+    margin-left: 16px;
+    height: 24px;
+    width: 66px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    
 }
 
-.App-link {
-  color: #61dafb;
+body{
+    background-image: url("https://i.picsum.photos/id/421/5184/3456.jpg?hmac=oZVZeKvbEdCaYkv3ZKqoqatnWpjI1wFJClxV2R9u6f8");
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-button{
+    width: 65px;
+    height: 25px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    margin-left: 3px;
+    font-family: 'Roboto Slab', serif;
 }
+
+.compleated{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.todo-item{
+    font-size: 17px;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    padding-left: 19px;
+}
+
+.todo button{
+    background-color: black;
+    color: white;
+    height: 27px;
+    width: 86px;
+    margin: 2px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
